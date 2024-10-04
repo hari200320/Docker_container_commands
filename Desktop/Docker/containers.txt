@@ -1,0 +1,37 @@
+Starting Containers : docker container start nginx
+
+Stopping Containers : docker container stop nginx
+
+Restarting Containers : docker container restart nginx
+
+Pausing Containers : docker container pause nginx
+
+Unpausing Containers : docker container unpause nginx
+
+Blocking a Container : docker container wait nginx
+
+Sending SIGKILL Containers : docker container kill nginx
+
+Sending another signal : docker container kill -s HUP nginx
+
+Connecting to an Existing Container : docker container attach nginx
+
+Check the Containers : docker ps
+
+To see all running containers : docker container ls
+
+Container Logs : docker logs infinite 
+
+tail -f’ Containers’ Logs : docker container logs infinite -f
+
+Inspecting Containers : docker container inspect infinite
+
+Inspecting Containers for certain : docker container inspect –format ‘{{ .NetworkSettings.IPAddress }}’ $(docker ps -q)
+
+Containers Events : docker system events infinite
+
+Running Processes : docker container top infinite
+
+Container Resource Usage : docker container stats infinite
+
+Inspecting changes to files or directories on a container’s filesystem : docker container diff infinite
